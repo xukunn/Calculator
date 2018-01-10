@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 et.setText(trim.substring(0, trim.length() - 1));
                 calculate();
             } else if (viewId == R.id.calculate) {
-                ToastUtils.showLongToast(MainActivity.this, "调接口");
+                ToastUtils.showLongToast(MainActivity.this, "点击了等号");
             } else if (viewId == R.id.reset) {
                 et.setText("");
                 if (cursorOnMoney) {

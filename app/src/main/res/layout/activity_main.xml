@@ -8,23 +8,40 @@
         android:id="@+id/et_phone"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:visibility="gone"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:visibility="gone" />
 
-    <com.xukunn.calculator.widget.LastInputEditText
-        android:id="@+id/et_expression"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:gravity="right"
-        android:hint="0.00"
-        android:maxLines="4" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff">
 
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="match_parent"
-        android:background="#fff"
-        android:hint="0.00"
-        android:layout_height="50dp" />
+        <com.xukunn.calculator.widget.LastInputEditText
+            android:id="@+id/et_expression"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="right"
+            android:maxLines="4"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#fff"
+            android:gravity="center|right"
+            android:hint="0.00"
+            android:paddingRight="15dp"
+            android:textColor="#333"
+            android:textSize="50sp" />
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,36 +51,40 @@
         <TextView
             android:id="@+id/tv7"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="7" />
+            android:gravity="center"
+            android:text="7"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tv8"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="8" />
+            android:gravity="center"
+            android:text="8"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tv9"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="9" />
+            android:gravity="center"
+            android:text="9"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/delete"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="删除" />
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="18sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -72,36 +93,40 @@
         <TextView
             android:id="@+id/tv4"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="4" />
+            android:gravity="center"
+            android:text="4"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tv5"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="5" />
+            android:gravity="center"
+            android:text="5"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tv6"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="6" />
+            android:gravity="center"
+            android:text="6"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/plus"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="+" />
+            android:gravity="center"
+            android:text="+"
+            android:textSize="18sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -110,36 +135,40 @@
         <TextView
             android:id="@+id/tv1"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="1" />
+            android:gravity="center"
+            android:text="1"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tv2"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="2" />
+            android:gravity="center"
+            android:text="2"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tv3"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="3" />
+            android:gravity="center"
+            android:text="3"
+            android:textSize="18sp" />
         <TextView
-            android:id="@+id/calculate"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="=" />
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp" />
+
+
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -148,65 +177,72 @@
         <TextView
             android:id="@+id/tv0"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="0" />
+            android:gravity="center"
+            android:text="0"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tv00"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="00" />
+            android:gravity="center"
+            android:text="00"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tvPoint"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="." />
+            android:gravity="center"
+            android:text="."
+            android:textSize="18sp" />
+
         <TextView
+            android:id="@+id/calculate"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="" />
+            android:gravity="center"
+            android:text="="
+            android:textSize="18sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:visibility="visible"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="visible">
 
         <TextView
             android:id="@+id/minus"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-" />
+            android:gravity="center"
+            android:text="-"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/divide"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="÷" />
+            android:gravity="center"
+            android:text="÷"
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/multi"
             android:layout_width="0dp"
-            android:gravity="center"
-            android:textSize="18sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="×" />
+            android:gravity="center"
+            android:text="×"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/reset"
@@ -214,7 +250,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="C"
+            android:text="复位"
             android:textSize="18sp" />
     </LinearLayout>
 
